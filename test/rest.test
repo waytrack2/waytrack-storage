@@ -1,0 +1,25 @@
+
+# GET: http://localhost:15000/devices
+curl http://localhost:15000/devices
+echo -e "\n"
+
+# POST: http://localhost:15000/devices
+curl -X POST -H 'Content-Type: application/json'\
+ -d '{"name": "869731054158803", "aka": "BOX001", "type": 5, "active": true}' http://localhost:15000/devices
+ #-d '{"name": "868166052272309", "aka": "TK354", "type": 5, "active": true}' http://localhost:15000/devices
+ #-d '{"name": "869731054158803", "aka": "BOX001", "type": 6, "active": true}' http://localhost:15000/devices
+echo -e "\n"
+
+# GET: http://localhost:15000/devices/id/:id
+curl http://localhost:15000/devices/id/100
+echo -e "\n"
+
+# GET: http://localhost:15000/imei/:imei
+curl http://localhost:15000/devices/imei/864035051885417
+echo -e "\n"
+
+# PATCH: http://localhost:15000/devices/imei/868166052272309
+curl -X PATCH -H 'Content-Type: application/json'\
+ -d '{"last_connectz": "2024-05-02T19:45:21.000Z", "data_valid": true}'\
+ http://localhost:15000/devices/imei/868166052272309
+echo -e "\n"

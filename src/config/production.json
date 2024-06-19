@@ -1,0 +1,15 @@
+{
+  "api": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "rastree",
+      "user": "rastree",
+      "password": "qwerty"
+    },
+    "httpServer": {
+      "host": "127.0.0.1",
+      "port": 11000
+    }
+  }
+}
