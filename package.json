@@ -1,0 +1,33 @@
+{
+  "name": "waytrack-storage",
+  "version": "1.0.0",
+  "description": "waytrack REST API & storage",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_CONFIG_DIR=src/config/ nodemon src/app.js",
+    "start": "NODE_CONFIG_DIR=src/config/ NODE_ENV=production node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waytrack2/waytrack-storage.git"
+  },
+  "author": "Jorge Toro <jolthgs@gmail.com> (https://jolthgs.wordpress.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/waytrack2/waytrack-storage/issues"
+  },
+  "homepage": "https://github.com/waytrack2/waytrack-storage#readme",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "config": "^3.3.11",
+    "express": "^4.19.2",
+    "pg": "^8.11.5",
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.0.0"
+  }
+}
